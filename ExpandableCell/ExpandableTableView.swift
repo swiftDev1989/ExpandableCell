@@ -148,7 +148,7 @@ extension ExpandableTableView {
     public func close(at indexPath: IndexPath) {
         guard let cell = self.cellForRow(at: indexPath) as? ExpandableCell else { return }
         if cell.isExpanded() {
-            close(indexPath: indexPath)
+            close(at: indexPath)
         }
     }
     
